@@ -1,4 +1,4 @@
-html(ng-modules="node.crud,node.create")
+html(ng-app="node.crud")
     head
         link(rel='stylesheet', href="./css/style.css")
         script(src="./lib/jquery-1.10.2.min.js")
@@ -10,7 +10,7 @@ html(ng-modules="node.crud,node.create")
         script(src="./system/common/util.js")
         script(src="./system/node/crud.js")
         script(src="./system/node/index.js")
-        script(src="./system/node/create.js")
+   
     body(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}')
         header
             h1 -FN-Color
@@ -19,11 +19,17 @@ html(ng-modules="node.crud,node.create")
         .container(ng-init="crud.query()")
             .color(ng-repeat= "color in crud.data.records")
                 .module
+
                     .M_color(style="background:{{color.content}};")
+                        a(ng-click="crud.remove(color,$index, true)") 删除
                     .M_Numerical
                         p {{color.content}}
-
+                       
       
+        .colorsubmit(ng-init="newColor={}")
+            .form-group
+                input(ng-model="newColor.content")
+                button.btn(ng-click="crud.create(newColor,true)") add
         footer
          p Running on Zerojs, FN-Color.Zerojs.io
 
