@@ -1,0 +1,30 @@
+html(ng-modules="node.crud,node.create")
+    head
+        link(rel='stylesheet', href="./css/style.css")
+        script(src="./lib/jquery-1.10.2.min.js")
+        script(src="./lib/angular.min.js")  
+        script(src="./lib/angular.ng-modules.js")  
+        script(src="./lib/lodash.compat.min.js")
+        script(src="./lib/angular-sanitize.min.js")
+        script(src="./lib/angular-resource.min.js")
+        script(src="./system/common/util.js")
+        script(src="./system/node/crud.js")
+        script(src="./system/node/index.js")
+        script(src="./system/node/create.js")
+    body(ng-controller="node.crud", crud-config='{"type":"color"}')
+        header
+            h1 -FN-Color
+            p This is a page about color ,just for Engineer
+
+        .container(ng-init="crud.query()")
+            .color(ng-repeat= "color in crud.data.records")
+                .module
+                    .M_color(style="background:{{color.content}};")
+                    .M_Numerical
+                        p {{color.content}}
+
+      
+        footer
+         p Running on Zerojs, FN-Color.Zerojs.io
+
+

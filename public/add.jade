@@ -1,0 +1,33 @@
+html(ng-modules="node.crud,node.create")
+    head
+        link(rel='stylesheet', href="./css/style.css")
+        script(src="./lib/jquery-1.10.2.min.js")
+        script(src="./lib/angular.min.js")  
+        script(src="./lib/angular.ng-modules.js")  
+        script(src="./lib/lodash.compat.min.js")
+        script(src="./lib/angular-sanitize.min.js")
+        script(src="./lib/angular-resource.min.js")
+        script(src="./system/common/util.js")
+        script(src="./system/node/crud.js")
+        script(src="./system/node/index.js")
+        script(src="./system/node/create.js")
+    body(ng-controller="node.crud", crud-config='{"type":"color"}')
+        header
+            h1 -FN-Color
+            p This is a page about color ,just for Engineer
+
+        
+
+        .colorsubmit(ng-controller="node.create" node-type="color")
+          
+            .form-group
+                 input.form-control(type='text', name='Description', placeholder='Description',ng-model='node.title')
+            .form-group
+                 input.form-control(type='text', name='Numerical', placeholder='Numerical',ng-model='node.content')  
+            .button_in       
+                button.btn(ng-click="submit()") Submit
+                button.btn(ng-click="crud.query()") Refresh
+        footer
+         p Running on Zerojs, FN-Color.Zerojs.io
+
+

@@ -1,0 +1,246 @@
+/*
+ * Import nib
+ */
+/*
+ * Grab a custom font from Google
+ */
+@import url("http://fonts.googleapis.com/css?family=Montserrat");
+/*
+ * Nib provides a CSS reset
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+a img {
+  border: none;
+}
+/*
+ * Store the main color and
+ * background color as variables
+ */
+body {
+  font-family: 'Quicksand';
+  background-color: #2b303b;
+  color: #414e5b;
+}
+p {
+  line-height: 1.8;
+  color: #4b5364;
+}
+header {
+  font-family: 'Quicksand';
+  padding: 50px 10px;
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  background-color: #2b303b;
+}
+header p {
+  margin: 10px;
+  font-size: 16px;
+}
+.container {
+  width: 76%;
+  margin: 10px auto;
+  height: auto;
+}
+
+input {
+   margin: 0 auto;
+   background-color: #232731;
+   border: solid 1px #1F242F;
+   width: 300px;
+   height: 40px;
+   border-radius: 5px !important;
+   color: #fff!important;
+   outline: none;
+}
+input.form-control {
+   color: #fff;
+   padding-left: 10px;
+}
+.form-group{
+  padding-top: 10px;
+  text-align: center;
+}
+.button_in{
+  width: 100%;
+  text-align:center;
+  padding-top: 10px;
+  margin-left: -70px;
+
+}
+button{
+  background-color: #40C27D;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+button:hover{
+  background-color: #38AB6E;
+  
+}
+
+.btn{
+  display: inline-block;
+
+  border-radius: 5px;
+  width: 80px;
+  height: 38px;
+  margin-left: 10px;
+}
+.btn focus{
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80px;
+  height: 38px;
+  margin-left: 10px;
+}
+
+
+.container:after {
+  visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.color {
+  width: 100%;
+
+}
+.module {
+  width: 150px;
+  height: 170px;
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.M_color {
+  width: 150px;
+  height: 130px;
+  background-color: #4a90e2;
+  z-index: 9999;
+}
+.M_Numerical {
+  width: 150px;
+  height: 40px;
+  background-color: #242832;
+  font-size: 14px;
+}
+.M_Numerical p {
+  color: #4B5261;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+
+.colorsubmit{
+ text-align: center;
+}
+
+
+
+.colorsubmit button{
+  
+   background-color: #000;
+  
+}
+
+}
+footer {
+  width: 100%;
+  margin: 50px auto;
+  padding-top: 5px;
+  font-size: 13px;
+}
+footer p{
+  text-align: center;
+}
