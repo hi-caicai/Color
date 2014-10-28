@@ -1,5 +1,6 @@
 html(ng-app="node.crud")
     head
+        link(rel='stylesheet',href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
         link(rel='stylesheet', href="./css/style.css")
         script(src="./lib/jquery-1.10.2.min.js")
         script(src="./lib/angular.min.js")  
@@ -21,15 +22,10 @@ html(ng-app="node.crud")
                 .module
 
                     .M_color(style="background:{{color.content}};")
-                        a(ng-click="crud.remove(color,$index, true)") 删除
+                        .Delete(ng-click="crud.remove(color,$index, true)") 
+                            i.fa.fa-times
                     .M_Numerical
                         p {{color.content}}
-                       
-      
-        .colorsubmit(ng-init="newColor={}")
-            .form-group
-                input(ng-model="newColor.content")
-                button.btn(ng-click="crud.create(newColor,true)") add
         footer
          p Running on Zerojs, FN-Color.Zerojs.io
 

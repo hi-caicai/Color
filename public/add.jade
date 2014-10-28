@@ -18,15 +18,10 @@ html(ng-modules="node.crud,node.create")
 
         
 
-        .colorsubmit(ng-controller="node.create" node-type="color")
-          
+          .colorsubmit(ng-init="newColor={}")
             .form-group
-                 input.form-control(type='text', name='Description', placeholder='Description',ng-model='node.title')
-            .form-group
-                 input.form-control(type='text', name='Numerical', placeholder='Numerical',ng-model='node.content')  
-            .button_in       
-                button.btn(ng-click="submit()") Submit
-                button.btn(ng-click="crud.query()") Refresh
+                input(ng-model="newColor.content")
+                button.btn(ng-click="crud.create(newColor,true)") add
         footer
          p Running on Zerojs, FN-Color.Zerojs.io
 

@@ -207,9 +207,15 @@ button:hover{
 .M_color {
   width: 150px;
   height: 130px;
-
   z-index: 9999;
 }
+.Delete{
+  padding-right: 10px;
+  padding-top: 10px;
+  float: right;
+  color: #414e5b;
+}
+
 .M_Numerical {
   width: 150px;
   height: 40px;
@@ -217,21 +223,20 @@ button:hover{
   font-size: 14px;
 }
 .M_Numerical p {
-  color: #4B5261;
+  color: #4A515E;
   font-size: 16px;
   text-align: center;
   padding-top: 5px;
+  letter-spacing: 1px;
 
 .colorsubmit{
  text-align: center;
 }
 
 
-
 .colorsubmit button{
   
-   background-color: #000;
-  
+   background-color: #000;  
 }
 
 }
