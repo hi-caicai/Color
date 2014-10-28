@@ -11,7 +11,7 @@ html(ng-modules="node.crud,node.create")
         script(src="./system/node/crud.js")
         script(src="./system/node/index.js")
         script(src="./system/node/create.js")
-    body(ng-controller="node.crud", crud-config='{"type":"color"}')
+    body(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}')
         header
             h1 -FN-Color
             p This is a page about color ,just for Engineer
