@@ -1,0 +1,33 @@
+html
+    head
+        link(rel='stylesheet', href="./css/style.css")
+        script(src="./lib/jquery-1.10.2.min.js")
+        script(src="./lib/angular.min.js") 
+        script(src="./lib/angular.js") 
+        script(src="./lib/angular-resource.min.js")
+        script(src="./system/common/util.js")
+        script(src="./system/user/login.js")
+    body
+        header
+            h1 -FN-Color
+            p This is a page about color ,just for Engineer
+
+        
+
+          .login(ng-app='user.login')
+            form(ng-controller="login",redirect="/")
+                    .form-group
+                        input.form-control(type='text', name='email', placeholder='Email',ng-model='user.email')
+                    .form-group
+                        input.form-control(type='password', name='password', placeholder='Password',ng-model='user.password',ng-keyup='$event.which==13&&login()')
+                    .button_in
+                        button.btn(type='button',ng-click="login(user)") Sign in
+                div.Prompt
+                    .callout.callout-danger(ng-if="failedCode" ng-switch="failedCode")
+                        p(ng-switch-when="404") 用户名或密码错误。
+                        p(ng-switch-when="500") 服务器出错，请查看后台记录。
+                        p(ng-switch-default) 未知错误，请查看后台记录。
+        footer
+         p Running on Zerojs, FN-Color.Zerojs.io
+
+

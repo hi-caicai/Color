@@ -1,4 +1,4 @@
-html(ng-modules="node.crud,node.create")
+html(ng-modules="node.crud,node.create,user")
     head
         link(rel='stylesheet', href="./css/style.css")
         script(src="./lib/jquery-1.10.2.min.js")
@@ -11,17 +11,23 @@ html(ng-modules="node.crud,node.create")
         script(src="./system/node/crud.js")
         script(src="./system/node/index.js")
         script(src="./system/node/create.js")
-    body(ng-controller="node.crud", crud-config='{"type":"color"}')
+        script(src="./system/user/session.js")
+        script(src="./system/user/user.js")
+   
+    body(ng-controller="user")
         header
             h1 -FN-Color
             p This is a page about color ,just for Engineer
 
         
 
-          .colorsubmit(ng-init="newColor={}")
-            .form-group
-                input(ng-model="newColor.content")
-                button.btn(ng-click="crud.create(newColor,true)") add
+          .colorsubmit(ng-controller="node.crud", crud-config='{"type":"color"}',ng-init="newColor={}",ng-if="user.id")
+            form(name="addColor")
+                .form-group
+                    //- input(ng-model="newColor.content", ng-pattern='(\#(\\d{6}|\\d{3})|rgba\\([\\d,]*\\))')
+                    input(ng-model="newColor.content", placeholder='#FFF | RGBA(255,255,255,1)' ng-pattern='/(\#(\\d{6}|\\d{3})|rgba\\([\\d,]*\\))/')
+                    button.btn(ng-click="addColor.$valid&&crud.create(newColor,true)") add
+
         footer
          p Running on Zerojs, FN-Color.Zerojs.io
 

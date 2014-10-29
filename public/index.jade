@@ -1,4 +1,4 @@
-html(ng-app="node.crud")
+html(ng-modules="node.crud, user")
     head
         link(rel='stylesheet',href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
         link(rel='stylesheet', href="./css/style.css")
@@ -11,13 +11,15 @@ html(ng-app="node.crud")
         script(src="./system/common/util.js")
         script(src="./system/node/crud.js")
         script(src="./system/node/index.js")
+        script(src="./system/user/session.js")
+        script(src="./system/user/user.js")
    
-    body(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}')
+    body(ng-controller="user")
         header
             h1 -FN-Color
             p This is a page about color ,just for Engineer
 
-        .container(ng-init="crud.query()")
+        .container(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}',ng-init="crud.query()")
             .color(ng-repeat= "color in crud.data.records")
                 .module
 

@@ -257,7 +257,7 @@ angular.module('util',['ngResource'])
     var session = {},
       registered = {}
     return {
-      item : function( name, setObj ){
+      data : function( name, setObj ){
         if( setObj ){
 
           if(_.isObject( session[name])){

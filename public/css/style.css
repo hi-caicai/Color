@@ -133,13 +133,14 @@ header p {
 
 input {
    margin: 0 auto;
-   background-color: #232731;
+   background-color: #RGB(41, 45, 56);
    border: solid 1px #1F242F;
    width: 300px;
    height: 40px;
    border-radius: 5px !important;
-   color: #fff!important;
+   color: #666666!important;
    outline: none;
+   padding-left: 10px;
 }
 input.form-control {
    color: #fff;
@@ -153,7 +154,7 @@ input.form-control {
   width: 100%;
   text-align:center;
   padding-top: 10px;
-  margin-left: -70px;
+  margin-left: -113px;
 
 }
 button{
@@ -205,6 +206,7 @@ button:hover{
   padding-bottom: 20px;
 }
 .M_color {
+  background-image: url(../img/none.svg);
   width: 150px;
   height: 130px;
   z-index: 9999;
@@ -213,7 +215,10 @@ button:hover{
   padding-right: 10px;
   padding-top: 10px;
   float: right;
-  color: #414e5b;
+  color: transparent;
+}
+.Delete:hover{
+  color: RGB(43, 48, 59);
 }
 
 .M_Numerical {
@@ -232,7 +237,12 @@ button:hover{
 .colorsubmit{
  text-align: center;
 }
-
+.login{
+  text-align: center;
+}
+.install{
+  text-align: center;
+}
 
 .colorsubmit button{
   

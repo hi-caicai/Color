@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150px" height="130px" viewBox="0 0 150 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 1 + 无效</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Rectangle-1-+-无效" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="150" height="130"></rect>
+            <text id="无效" sketch:type="MSTextLayer" font-family="FZZhunYuan-M02S" font-size="30" font-weight="normal" fill="#6E6E6E">
+                <tspan x="45" y="58">无效</tspan>
+                <tspan x="45" y="92">色值</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

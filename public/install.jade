@@ -1,0 +1,36 @@
+html(ng-modules="user.login")
+    head
+        link(rel='stylesheet', href="./css/style.css")
+        meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+        script(src='./lib/jquery-1.10.2.min.js')
+        script(src='./lib/angular.js')
+        script(src='./lib/lib/angular-resource.min.js')
+        script(src="./lib/angular.ng-modules.js")  
+        script(src="./lib/lodash.compat.min.js")
+        script(src="./lib/angular-sanitize.min.js")
+        script(src="./lib/angular-resource.min.js")
+        script(src="./system/common/util.js")
+        script(src="./system/user/login.js")
+
+    body
+        header
+            h1 -FN-Color
+            p This is a page about color ,just for Engineer
+
+        
+
+          .install(ng-app="user.login")
+            form(ng-controller="register",redirect='/')
+                    .form-group
+                        input.form-control(type='text', name='name', placeholder='Name',ng-model='user.name')
+                    .form-group
+                        input.form-control(type='text', name='email', placeholder='Email',ng-model='user.email')
+                    .form-group
+                        input.form-control(type='password', name='password', placeholder='Password',ng-model='user.password')
+                    .button_in
+                        button.btn(type='submit',ng-click='register(user)') Install
+
+        footer
+         p Running on Zerojs, FN-Color.Zerojs.io
+
+
