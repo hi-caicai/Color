@@ -19,15 +19,23 @@ html(ng-modules="node.crud, user")
             h1 -FN-Color
             p This is a page about color ,just for Engineer
 
-        .container(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}',ng-init="crud.query()")
-            .color(ng-repeat= "color in crud.data.records")
-                .module
+        div(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}',ng-init="crud.query()")
+            .container
+                .color(ng-repeat= "color in crud.data.records")
+                    .module
 
-                    .M_color(style="background:{{color.content}};")
-                        .Delete(ng-click="crud.remove(color,$index, true)") 
-                            i.fa.fa-times
-                    .M_Numerical
-                        p {{color.content}}
+                        .M_color(style="background:{{color.content}};")
+                            .Delete(ng-click="crud.remove(color,$index, true)") 
+                                i.fa.fa-times
+                        .M_Numerical
+                            p {{color.content}}
+                          .colorsubmit(ng-controller="node.crud", crud-config='{"type":"color"}',ng-init="newColor={}",ng-if="user.id")
+            .addColor(ng-init="newColor={}",ng-if="user.id")
+                form(name="addColor")
+                    .form-group
+                        //- input(ng-model="newColor.content", ng-pattern='(\#(\\d{6}|\\d{3})|rgba\\([\\d,]*\\))')
+                        input(ng-model="newColor.content", placeholder='#FFF | RGBA(255,255,255,1)',ng-pattern='/(\#(\[0-9a-fA-F]{6}|\[0-9a-fA-F]{3})|rgba\\([\\d,]*\\))/')
+                        button.btn(ng-click="addColor.$valid&&crud.create(newColor,true)") add
         footer
          p Running on Zerojs, FN-Color.Zerojs.io
 
