@@ -1,111 +1,10 @@
-/*
- * Import nib
- */
-/*
- * Grab a custom font from Google
- */
-@import url("http://fonts.googleapis.com/css?family=Montserrat");
-/*
- * Nib provides a CSS reset
- */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-body {
-  line-height: 1;
-  color: #000;
-  background: #fff;
-}
-ol,
-ul {
-  list-style: none;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
 
-a img {
-  border: none;
-}
 /*
  * Store the main color and
  * background color as variables
  */
 body {
-  font-family: 'Quicksand';
+  font-family: 'Arial';
   background-color: #2b303b;
   color: #414e5b;
 }
@@ -113,8 +12,13 @@ p {
   line-height: 1.8;
   color: #4b5364;
 }
+img.logo{
+  width:295px;
+  padding-top: 40px;
+
+}
 header {
-  font-family: 'Quicksand';
+  font-family: 'Arial';
   padding: 50px 10px;
   color: #fff;
   font-size: 36px;
@@ -141,6 +45,7 @@ input {
    color: #666666!important;
    outline: none;
    padding-left: 10px;
+
 }
 input.form-control {
    color: #fff;
@@ -184,8 +89,6 @@ button:hover{
   height: 38px;
   margin-left: 10px;
 }
-
-
 .container:after {
   visibility:hidden;
     display:block;
@@ -233,13 +136,19 @@ button:hover{
   text-align: center;
   padding-top: 5px;
   letter-spacing: 1px;
-
+}
 .colorsubmit{
  text-align: center;
 }
+
+.user{
+  margin-top: 30px;
+}
+
 .login{
   text-align: center;
 }
+
 .install{
   text-align: center;
 }
@@ -249,7 +158,6 @@ button:hover{
    background-color: #000;  
 }
 
-}
 footer {
   width: 100%;
   margin: 50px auto;

@@ -13,11 +13,11 @@ html(ng-modules="node.crud, user")
         script(src="./system/node/index.js")
         script(src="./system/user/session.js")
         script(src="./system/user/user.js")
-   
+    title -FN-Color
     body(ng-controller="user")
         header
-            h1 -FN-Color
-            p This is a page about color ,just for Engineer
+            img.logo(src="img/logo.svg" )
+            p FN-Color, just for Engineer & Designer
 
         div(ng-controller="node.crud", crud-config='{"type":"color"}' crud-params='{"limit":256}',ng-init="crud.query()")
             .container

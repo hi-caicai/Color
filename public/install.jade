@@ -14,21 +14,19 @@ html(ng-modules="user.login")
 
     body
         header
-            h1 -FN-Color
-            p This is a page about color ,just for Engineer
-
-        
-
-          .install(ng-app="user.login")
-            form(ng-controller="register",redirect='/')
-                    .form-group
-                        input.form-control(type='text', name='name', placeholder='Name',ng-model='user.name')
-                    .form-group
-                        input.form-control(type='text', name='email', placeholder='Email',ng-model='user.email')
-                    .form-group
-                        input.form-control(type='password', name='password', placeholder='Password',ng-model='user.password')
-                    .button_in
-                        button.btn(type='submit',ng-click='register(user)') Install
+            img.logo(src="img/logo.svg" )
+            p -FN-Color, just for Engineer & Designer
+            .user
+                .install(ng-app="user.login")
+                    form(ng-controller="register",redirect='/')
+                            .form-group
+                                input.form-control(type='text', name='name', placeholder='Name',ng-model='user.name')
+                            .form-group
+                                input.form-control(type='text', name='email', placeholder='Email',ng-model='user.email')
+                            .form-group
+                                input.form-control(type='password', name='password', placeholder='Password',ng-model='user.password')
+                            .button_in
+                                button.btn(type='submit',ng-click='register(user)') Install
 
         footer
          p Running on Zerojs, FN-Color.Zerojs.io
