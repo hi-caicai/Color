@@ -103,16 +103,20 @@ button:hover{
 }
 .module {
   width: 150px;
-  height: 170px;
+  height: 210px;
   float: left;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
 }
 .M_color {
   background-image: url(../img/none.svg);
   width: 150px;
-  height: 130px;
+  height: 160px;
   z-index: 9999;
+  border-radius: 5px 5px 0px 0px;
+
+
 }
 .Delete{
   padding-right: 10px;
@@ -126,16 +130,19 @@ button:hover{
 
 .M_Numerical {
   width: 150px;
-  height: 40px;
-  background-color: #242832;
+  height: 50px;
+  background-color: #fff;
   font-size: 14px;
+  border-radius: 0px 0px 5px 5px;
+
 }
 .M_Numerical p {
-  color: #4A515E;
-  font-size: 16px;
+  color: #999999;
+  font-size: 14px;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 12px;
   letter-spacing: 1px;
+  margin: 0px;
 }
 .colorsubmit{
  text-align: center;

@@ -23,13 +23,12 @@ html(ng-modules="node.crud, user")
             .container
                 .color(ng-repeat= "color in crud.data.records")
                     .module
-
                         .M_color(style="background:{{color.content}};")
                             .Delete(ng-click="crud.remove(color,$index, true)") 
                                 i.fa.fa-times
                         .M_Numerical
-                            p {{color.content}}
-                          .colorsubmit(ng-controller="node.crud", crud-config='{"type":"color"}',ng-init="newColor={}",ng-if="user.id")
+                            p.text{{color.content}}
+                        .colorsubmit(ng-controller="node.crud", crud-config='{"type":"color"}',ng-init="newColor={}",ng-if="user.id")
             .addColor(ng-init="newColor={}",ng-if="user.id")
                 form(name="addColor")
                     .form-group
