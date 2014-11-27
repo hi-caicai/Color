@@ -1,10 +1,10 @@
 {
   "name": "zero-color",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "zero module",
   "zero": {
     "dependencies": {
-      "theme" : "^0.0.1",
+      "theme": "^0.0.1",
       "request": "^0.0.1",
       "model": "^0.0.1",
       "node": "^0.0.1",
@@ -13,7 +13,7 @@
       "respond": "^0.0.1",
       "logger": "^0.0.1",
       "rest": "^0.0.1",
-      "user":"^0.0.1"
+      "user": "^0.0.1"
     }
   }
 }
