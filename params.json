@@ -1,0 +1,1 @@
+{"name":"Fn-Color","tagline":"-FN-Color, just for Engineer & Designer","body":"//install zero if you haven't\r\n>  npm install zero -g\r\n\r\n>  zero new myColor && cd myColor\r\n>  zero install color\r\n>  node app","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
